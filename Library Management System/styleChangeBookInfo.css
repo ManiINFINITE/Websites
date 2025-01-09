@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: "Nunito";
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-color: #6e54b5;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    z-index: 3;
+    min-height: 140px;
+}
+
+header h1 {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    width: 100%;
+    height: 469.5px;
+    display: flex;
+}
+
+main .left {
+    height: inherit;
+    width: 350px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid #6e54b5;
+    position: relative;
+    overflow: hidden;
+}
+
+main .left img {
+    max-height: 400px;
+    border-radius: 5px;
+    outline: 10px double black;
+    box-shadow: 0 0 0px 10px  #6e54b5;
+}
+
+main .right {
+    height: inherit;
+    width: calc(100vw - 350px);
+    display: flex;
+}
+
+.right h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.right .change-info div {
+    box-sizing: border-box;
+    margin: 15px 15px;
+    padding: 5px 10px;
+    display: flex;
+    border-bottom: 3px solid #6e54b5;
+}
+
+.right section div aside,
+.right form div aside {
+    padding: 5px 10px;
+}
+
+.right section div .information,
+.right form div .information {
+    width: 70%;
+}
+
+.right section div .btn,
+.right form div .btn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right section div .btn button,
+.right form div .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e54b5;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.right section div .btn button:hover,
+.right form div .btn button:hover {
+    background-color: #fff;
+    color: #6e54b5;
+    box-shadow: 0 0 10px 1px #6e54b5;
+}
+
+.right .change-summary {
+    height: inherit;
+    width: 60%;
+    overflow-y: scroll;
+}
+
+.right .change-info div {
+    margin: 40px 0 50px 0px;
+    border-bottom: none;
+}
+
+.right .change-summary div {
+    display: flex;
+    flex-direction: column;
+}
+
+.right .change-summary #summary aside {
+    width: 100%;
+}
+
+.right .change-info {
+    border-right: 3px solid #6e54b5;
+}
+
+.right .change-info #count {
+    border-bottom: none;
+}
+
+.right .change-summary::-webkit-scrollbar {
+    background-color: #000;
+}
+
+.right .change-summary::-webkit-scrollbar-thumb {
+    background-color: #6e54b5;
+    border-radius: 5px;
+}
+
+.right .change-summary #summary .btn {
+    position: sticky;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.right .change-summary #summary button:hover {
+    background-color: white;
+    color: #6e54b5;
+    box-shadow: 0 0 10px 1px #6e54b5;
+}
+
+.change-section {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.change-section textarea {
+    border: none;
+    height: 250px;
+    width: 100%;
+    resize: none;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.change-section input[type="submit"],
+.change-section #cancel-change {
+    border: none;
+    background-color: #6e54b5;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    font-size: 15px;
+}
+
+.change-section input[type="submit"]:hover,
+.change-section #cancel-change:hover {
+    background-color: #fff;
+    color: #6e54b5;
+    box-shadow: 0 0 10px 1px #6e54b5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.left button {
+    display: none;
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: #6e54b5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .left:hover > button {
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0 0px 250px rgba(0, 0, 0, 0.5);
+}
+
+.left button:hover {
+    background-color: #fff;
+    color: #6e54b5;
+    box-shadow: 0 0 10px 1px #6e54b5;
+}

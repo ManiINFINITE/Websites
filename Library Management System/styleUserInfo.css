@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: "Nunito";
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-color: #6e54b5;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    z-index: 3;
+}
+
+.profile {
+    position: absolute;
+    margin: 20px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.profile i {
+    font-size: 3rem;
+}
+
+.profile-info {
+    position: absolute;
+    height: 300px;
+    width: 100px;
+    background-color: #6e54b5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-top: 50px;
+    z-index: 2;
+    transform: translateY(-250px);
+    transition: all .3s ease;
+}
+
+.profile-info ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-info ul li {
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile-info ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.profile-info ul li:hover {
+    color: #9c85db;
+    text-shadow: 0 0 10px #9c85db;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    background-color: transparent;
+    width: 500px;
+    padding: 15px 30px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.group {
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.group label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6e54b5;
+    text-shadow: 0 1px 0px black;
+    border: 1px solid #6e54b5;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom: none;
+    padding: 5px 20px;
+    padding-bottom: 0;
+    box-shadow: 0 0 10px 2px #6e54b5;
+    background-color: #6e54b5;
+    color: white;
+}
+
+.group .info {
+    border: 1px solid #6e54b5;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.change-password {
+    width: 445px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #6e54b5;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.change-password:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px 2px #6e54b5;
+    color: #6e54b5;
+}
+
+
+.change-password-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    padding-top: 0;
+}
+
+.change-password-page input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid #6e54b5;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.change-password-page input[type="submit"] {
+    background-color: #6e54b5;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.change-password-page input[type="submit"]:hover {
+    background-color: white;
+    box-shadow: 0 0 10px 2px #6e54b5;
+    color: #6e54b5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

@@ -1,6 +1,6 @@
 # 🌐 Websites
 
-A collection of web projects built with vanilla HTML, CSS, JavaScript, and PHP.
+A collection of web projects built with vanilla HTML, CSS, JavaScript, and PHP and MySQL as Database.
 
 ---
 
